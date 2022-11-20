@@ -32,10 +32,16 @@ p {
     margin-bottom:0px;
 }
 
+img {
+    display: block
+}
+
 .header{
     align-items: center;
-    height: 80px;
-    
+}
+.page-header{
+    border-bottom: 1px solid #ececec;
+
 }
 
 .page-header .conteiner{
@@ -98,6 +104,12 @@ p {
     letter-spacing: 0.02em;
 }
 
+.site-nav .link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
 .site-nav .item{
     margin-right: 50px;
 }
@@ -129,21 +141,18 @@ p {
     margin-right: 50px;
 }
 
-.contact .item:last-child {
-    margin-right: 215px;
-
-}
-
 /*hero*/
 
 .hero{
     background-color:var(--hero-footer-color);
     text-align: center;
-    margin-bottom: 94px;
+}
+
+.hero .conteiner{
+    padding: 200px 0;
 }
 
 .hero-title{
-    padding-top: 200px;
     margin:0 auto;
     margin-bottom: 30px;
     max-width: 696px;
@@ -171,7 +180,7 @@ p {
 }
 
 .section{
-    padding-bottom: 94px;
+    padding:94px 0;
 }
 
 .section-title{
@@ -189,7 +198,7 @@ p {
     display: flex;
 }
 
-.feature-list .item{
+.feature-list .item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -210,14 +219,25 @@ p {
     column-gap:30px;
 }
 
+.nopadding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 /*team*/
 
 .team{
     column-gap: 30px;
 }
 
+.image{
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
 .team .item{
     background-color:var(--background-color)
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team .title{
@@ -243,7 +263,6 @@ p {
 
 .button{
     display: inline-block;
-    margin-bottom: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border:1px solid transparent;
     border-radius: 4px;
@@ -269,12 +288,17 @@ p {
 
 footer{
     background-color:var(--hero-footer-color);
-    height: 252px;
 }
 
 .footerr{
     margin-top: 20px;
     font-style: normal;
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .footer-list .item{
@@ -287,10 +311,6 @@ footer{
 
 .address{
     padding: 60px 0;
-}
-
-.address .list{
-    flex-direction: column;
 }
 
 .logo .footerr{
@@ -330,15 +350,13 @@ footer{
     margin-right: auto;
     gap: 8px;
     margin-bottom: 50px;
-    height: 54px;
-    width: 575px;
 }
 
 .button-filter{
+    padding: 6px 22px;
     color: var(--title-text-color);
     background-color:var(--team-color);
     border: 1px solid transparent;
-    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -356,10 +374,10 @@ footer{
 
 .portfolio-list{
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card-info{
-    border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
 }
@@ -369,11 +387,11 @@ footer{
 }
 
 .portfolio-list .item{
-    margin-right: 30px;
-    margin-bottom: 30px;
     height: 404px;
     background-color: var(#background-color);
+    border-bottom: 1px solid #eeeeee;
 }
+
 
 .portfolio-list .item:nth-child(3n){
     margin-right: 0;
