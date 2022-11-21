@@ -8,6 +8,7 @@
     --team-color:#F5F4FA;
     --hero-button:#188CE8;
     --mailtel-color:#rgba(255, 255, 255, 0.6);
+    --border: #ececec
 }
 
 /*header*/
@@ -40,7 +41,7 @@ img {
     align-items: center;
 }
 .page-header{
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--border);
 
 }
 
@@ -137,13 +138,8 @@ img {
     
 }
 
-.contact .item{
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
 .contact .item:not(:last-child){
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 /*hero*/
@@ -151,6 +147,9 @@ img {
 .hero{
     background-color:var(--hero-footer-color);
     text-align: center;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero .conteiner{
@@ -185,7 +184,7 @@ img {
 }
 
 .section{
-    padding:94px 0;
+    padding:0 0 94px 0;
 }
 
 .section-title{
@@ -198,6 +197,10 @@ img {
 }
 
 /*features*/
+
+.osoblivosti{
+    padding-top: 94px;
+}
 
 .feature-list{
     display: flex;
@@ -224,11 +227,6 @@ img {
     column-gap:30px;
 }
 
-.nopadding{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 /*team*/
 
 .team{
@@ -237,15 +235,13 @@ img {
 
 .image{
     border-radius: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .team .item {
-    background-color: var(--background-color)
-}
-
-.team .item{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team .title{
@@ -257,7 +253,8 @@ img {
 }
 
 .team-section{
-    background-color: var(--team-color)
+    background-color: var(--team-color);
+    padding-top: 94px;
 }
 
 .team-text{
@@ -296,10 +293,13 @@ img {
 
 footer{
     background-color:var(--hero-footer-color);
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footerr{
-    margin-top: 20px;
+    margin-top: 28px;
     font-style: normal;
 }
 
@@ -310,7 +310,7 @@ footer{
 }
 
 .footer-list .item{
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 
 .footer-list .item:last-child{
@@ -318,7 +318,8 @@ footer{
 }
 
 .address{
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo .footerr{
@@ -392,7 +393,6 @@ footer{
     border-right: 1px solid #EEEEEE;;
 }
 .portfolio-list .item{
-    height: 404px;
     background-color: var(--background-color)
 }
 
